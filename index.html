@@ -11,13 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" type='text/css' href="styles.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
 </head>
 <body>
     
     <section class="s1">
         <div class="main-container">
             <div class="greeting-wrapper">
-                <h1>Hi, I'm Jose Wilhelm!</h1>
+                <h1 style="margin-bottom: 0px;">Hi, I'm Jose Wilhelm!</h1>
+                <h2>Data Analyst / Web Developer</h2>
             </div>
 
             <div class="intro-wrapper">
@@ -35,13 +37,13 @@
 
                 <div class="left-column">
                     <img id="profile_pic" src="images/resume_pic.jpg" />
-                    <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+                    <h5 style="text-align: center; line-height: 0;">Personalize Color Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">*Theme settings will be saved for<br />your next visit.</p>
@@ -52,8 +54,8 @@
                         <div id="preview">
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
-                            <h3>What I do</h3>
-                            <p>I was a lead developer in a past life, now I enjoy teaching courses.</p>
+                            <h3>Who I am</h3>
+                            <p>I'm a coding/math freak and soon-to-be data scientist. I'm working my way to the top and become one of the bests.</p>
                             <div id="corner-br" class="corner"></div>
                             <div id="corner-bl" class="corner"></div>
                         </div>
@@ -65,20 +67,160 @@
 
     <section class="s2">
         <div class="main-container">
-            About
+            
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More about me</h4>
+                    <p>I absolutely love learning on math, programming and data related subjects. I'm addicted to it. 
+                        I spend most of my time educating myself in these areas mostly through books and online courses.
+                    </p>
+
+                    <p>I'm a Project Euler enthusiast; I experience great fun solving its problems in my spare time. 
+                        I also greatly enjoy learning languages like German.
+                    </p>
+                
+                    <hr />
+
+                    <h4>TOP EXPERTISE</h4>
+                    <p>Data Analyst with programming and web development skills. My greater strength is Python.
+                        <a target="_blank" href="resume.pdf">Download Resume</a>
+                    </p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>R/RStudio</li>
+                            <li>SQL</li>
+                            <li>Statistics</li>
+                            <li>Spreadsheets</li>
+                            <li>Tidyverse</li>
+                            <li>Data Wrangling</li>
+                            <li>Data Analysis</li>
+                        </ul>
+
+                        <ul>
+                            <li>Django</li>
+                            <li>React</li>
+                            <li>JavaScript</li>
+                            <li>Postgres</li>
+                            <li>HTML/CSS</li>
+                            <li>Linux</li>
+                            <li>Git</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <!-- I will leave this image tag here for later.
+                        Uncomment when you get a social media image
+                        <img id="social_img" src="images/" /> -->
+                    <h3>Find me on Twitter, Linkedin and Github</h3>
+                    <a target="_blank" href="#">Twitter: @joselws9</a>
+                    <br />
+                    <a target="_blank" href="#">LinkedIn: </a>
+                    <br />
+                    <a target="_blank" href="#">Github: github.com/joselws</a>
+                    
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section class="s1">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align: center;">Relevant projects</h3>
+            
+            <div class="post-wrapper">
+
+                <div>
+                    <div class="post">
+                        <div class="post-header">
+                            <h5 class="post-title">Small Project</h5>
+                        </div>
+                        <img class="thumbnail" src="images/eda.jpg" />
+                        <div class="post-preview">
+                            <h6 class="post-title">Exploratory Data Analysis</h6>
+                            <p class="post-intro">Performed exploratory data analysis (EDA) at various topics on a BRFSS health dataset.</p>
+                            <p class="post-intro">
+                                <span class="project-skills">R/RStudio</span>
+                                <span class="project-skills">Statistics</span>
+                                <span class="project-skills">Tidyverse</span>
+                                <span class="project-skills">Data Wrangling</span>
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <div class="post-header">
+                            <h5 class="post-title">Small Project</h5>
+                        </div>
+                        <img class="thumbnail" src="images/inference.png" />
+                        <div class="post-preview">
+                            <h6 class="post-title">Hypothesis Testing</h6>
+                            <p class="post-intro">Demonstrated that employment rate of women increased in recent years through inferential statistics.</p>
+                            <p class="post-intro">
+                                <span class="project-skills">R/RStudio</span>
+                                <span class="project-skills">Statistics</span>
+                                <span class="project-skills">Tidyverse</span>
+                                <span class="project-skills">Data Wrangling</span>
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <div class="post-header">
+                            <h5 class="post-title">Small Project</h5>
+                        </div>
+                        <img class="thumbnail" src="images/regression.png" />
+                        <div class="post-preview">
+                            <h6 class="post-title">Linear Regression</h6>
+                            <p class="post-intro">Built a multivariate linear regression model on a movie dataset and predicted the popularity of the Hush movie with 95% accuracy.</p>
+                            <p class="post-intro">
+                                <span class="project-skills">R/RStudio</span>
+                                <span class="project-skills">Statistics</span>
+                                <span class="project-skills">Tidyverse</span>
+                                <span class="project-skills">Data Wrangling</span>
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Contact me</h3>
+            
+            <form id="contact-form">
+                <label>Name</label>
+                <input class="input-field" type="text" name="name" />
+                
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject" />
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email" />
+
+                <label>Message</label>
+                <textarea class="input-field" name="message"></textarea>
+
+
+                <input id="submit-btn" type="submit" value="Send" />
+            </form>
         </div>
     </section>
+
+    <script type="text/javascript" src="colorSwitch.js"></script>
 </body>
 </html>
