@@ -283,18 +283,15 @@ h6 { font-size: 16px; }
     background-color: var(--previewShadow);
 }
 
-.social-links {
+.links {
     display: grid;
     align-content: center;
     text-align: center;
 }
 
-/* As this id is for the moment unused, it's commented out
-decomment when I need a social media image
-#social_img {
+.social_img {
     width: 100%;
-} 
-*/
+}
 
 
 /* Projects section */
@@ -351,6 +348,21 @@ decomment when I need a social media image
     margin: 5px;
 }
 
+/* Course section */
+.courses-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-bottom: 50px;
+    padding-top: 50px;
+    gap: 100px;
+}
+
+.course-link {
+    margin: 10px 0px;
+}
+
+
+/* contact me section, currently unused */
 #contact-form {
     display: block;
     max-width: 600px;
@@ -391,7 +403,45 @@ decomment when I need a social media image
     border: none;
 }
 
+/* Footer */
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 100px;
+    margin: 25px 0px;
+}
 
+.personal-info {
+    align-content: center;
+    text-align: center;
+}
+
+.fa {
+    font-size: 26px;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+}
+
+.fa-linkedin {
+    width: 30px;
+    border-radius: 5%;
+    background: #007bb5;
+    color: #fff;
+    padding: 1px;
+}
+
+.social-title {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin: 5px 0px;
+}
+
+
+/* Responsive stuff */
 @media screen and (max-width: 1200px) {
     .main-container {
         width: 95%
