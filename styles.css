@@ -328,9 +328,9 @@ h6 { font-size: 16px; }
 }
 
 .post-title {
-    color: black;
     text-align: center;
     margin: 0;
+    font-weight: bold;
 }
 
 .post-intro {
@@ -411,9 +411,18 @@ h6 { font-size: 16px; }
     margin: 25px 0px;
 }
 
-.personal-info {
-    align-content: center;
+.footer-info {
+    position: relative;
+}
+
+.footer-name {
+    position: absolute;
     text-align: center;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .fa {
