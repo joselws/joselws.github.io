@@ -69,7 +69,8 @@ h6 { font-size: 16px; }
 }
 
 
-/* Presentation section */
+/* PRESENTATION SECTION */
+
 .main-container {
     width: 96vw;
     margin: 0 auto;
@@ -109,6 +110,7 @@ h6 { font-size: 16px; }
     border-radius: 5px 5px 0 0;
 }
 
+/* currently unused */
 /* #navigation {
     margin: 0;
     padding: 10px;
@@ -217,8 +219,8 @@ h6 { font-size: 16px; }
 }
 
 .right-column {
-    grid-area: right-column;
     display: grid;
+    grid-area: right-column;
     align-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -228,8 +230,8 @@ h6 { font-size: 16px; }
     background-color: var(--previewShadow);
     max-width: 300px;
     min-height: 180px;
-    padding-left: 30px;
-    padding-top: 30px;
+    padding: 30px 0 30px 30px;
+    margin: 0 auto;
 }
 
 #preview {
@@ -240,16 +242,17 @@ h6 { font-size: 16px; }
     position: relative;
 }
 
-.corner {
+/* currently unused */
+/* .corner {
     width: 7px;
     height: 7px;
     border-radius: 50%;
     border: 1.5px solid #17a2b8;
     background-color: var(--mainColor);
     position: absolute;
-}
+} */
 
-#corner-tl {
+/* #corner-tl {
     top: -5px;
     left: -5px;
 }
@@ -267,7 +270,10 @@ h6 { font-size: 16px; }
 #corner-bl {
     bottom: -5px;
     left: -5px;
-}
+} */
+
+
+/* ABOUT SECTION */
 
 .about-wrapper {
     display: grid;
@@ -284,18 +290,13 @@ h6 { font-size: 16px; }
     background-color: var(--previewShadow);
 }
 
-.links {
-    display: grid;
-    align-content: center;
-    text-align: center;
-}
-
-.social_img {
-    width: 100%;
-}
+/* unused */
+/* .about-me {
+} */
 
 
-/* Projects section */
+/* PROJECT SECTION */
+
 .post-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, 320px);
@@ -316,6 +317,14 @@ h6 { font-size: 16px; }
     padding: 15px;
 }
 
+.post-title {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
 .thumbnail {
     display: block;
     width: 100%;
@@ -326,14 +335,6 @@ h6 { font-size: 16px; }
 .post-preview {
     background-color: #fff;
     padding: 15px;
-}
-
-.post-title {
-    text-align: center;
-    color: black;
-    font-size: 18px;
-    margin: 0;
-    font-weight: bold;
 }
 
 .post-intro {
@@ -351,7 +352,9 @@ h6 { font-size: 16px; }
     margin: 5px;
 }
 
-/* Course section */
+
+/* COURSE SECTION */
+
 .courses-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -361,13 +364,24 @@ h6 { font-size: 16px; }
     margin: 0 3vw;
 }
 
+.course_img {
+    width: 100%;
+}
+
+.links {
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
 .course-link {
     margin: 10px 0px;
 }
 
 
-/* contact me section, currently unused */
-#contact-form {
+/* CONTACT ME FORM. CURRENTLY UNUSED */
+
+/* #contact-form {
     display: block;
     max-width: 600px;
     margin: 0 auto;
@@ -405,9 +419,11 @@ h6 { font-size: 16px; }
     color: #fff;
     background-color: var(--buttonColor);
     border: none;
-}
+} */
 
-/* Footer */
+
+/* FOOTER */
+
 .footer-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -454,7 +470,8 @@ h6 { font-size: 16px; }
 }
 
 
-/* Responsive stuff */
+/* RESPONSIVE STUFF */
+
 @media screen and (max-width: 1200px) {
     .main-container {
         width: 95%
