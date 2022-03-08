@@ -22,6 +22,9 @@
 html, body {
     padding: 0;
     margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 body * {
@@ -74,6 +77,7 @@ h6 { font-size: 16px; }
 .main-container {
     width: 96vw;
     margin: 0 auto;
+    flex: 1;
 }
 
 .greeting-wrapper {
@@ -470,6 +474,44 @@ h6 { font-size: 16px; }
 }
 
 
+/* PROJECT PAGES */
+
+.project-wrapper {
+    flex: 1;
+    max-width: 76vw;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    text-align: center;
+}
+
+.project-image-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.project-image {
+    object-fit: cover;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-list {
+    list-style-type: none;
+}
+
+
+
 /* RESPONSIVE STUFF */
 
 @media screen and (max-width: 1200px) {
@@ -524,5 +566,9 @@ h6 { font-size: 16px; }
 
     .footer-wrapper {
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .project-wrapper {
+        max-width: 84vw;
     }
 }
