@@ -11,14 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
         rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type='text/css' href="../../styles.css" />
-    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="stylesheet" type='text/css' href="../styles.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 
 <body>
-    <div class="overall-container">
-        
-    </div>
     <nav class="nav-wrapper">
         <div class="dots-wrapper">
             <div id="dot-1" class="browser-dot"></div>
@@ -27,28 +24,31 @@
         </div>
         
         <ul id="navigation">
-            <li></li>
+            <li><a href="../index.html">Go back</a></li>
         </ul>
     </nav>
 
     <main class="project-wrapper">
         <header class="project-header">
-            <h2 class="project-title">Commerce</h2>
+            <h2 class="project-title">
+                <a target="_blank" href="https://commerce-joselws.herokuapp.com/">Commerce</a>
+            </h2>
         </header>
 
         <div class="project-image-wrapper">
-            <img class="project-image" src="../../images/commerce.png" />
+            <a href="https://commerce-joselws.herokuapp.com/" target="_blank">
+                <img class="project-image" src="../images/commerce.png" />
+            </a>
         </div>
 
         <section class="project-section">
             <h3 class="project-section-title">Project links</h3>
-            <a class="project-link" href="">View project</a>
-            <a class="project-link" href="">View source code</a>
+            <a class="project-link" target="_blank" href="https://commerce-joselws.herokuapp.com/">View deployed project site</a>
+            <a class="project-link" target="_blank" href="https://github.com/joselws/commerce">View source code on Github</a>
         </section>
 
         <section class="project-section">
-            <h3 class="project-section-title">Tech stack</h3>
-            <h4 class="project-section-title">Skills used</h4>
+            <h3 class="project-section-title">Skills used & Tech stack</h3>
             <ul class="project-list">
                 <li class="project-skills">Web development - Backend</li>
                 <li class="project-skills">Python</li>
@@ -59,9 +59,36 @@
                 <li class="project-skills">Responsive Design</li>
                 <li class="project-skills">Linux</li>
                 <li class="project-skills">Git</li>
-                <li class="project-skills">Django Signals</li>
                 <li class="project-skills">Heroku</li>
+                <li class="project-skills">Django Signals</li>
+                <li class="project-skills">User uploaded images</li>
             </ul>
+        </section>
+
+        <section class="project-section">
+            <h3 class="project-section-title">Tl;dr</h3>
+            <p>
+                This is an ecommerce website based on auctions,
+                where you can post, bid, and comment other items.
+                You can open an account by registering.
+                You are able to post images of your items, delete items,
+                edit items, and close the auction - letting the highest bid user win the item.
+                You can browse items based on category, activity, and watchlist.
+            </p>
+            
+            <p class="project-text">
+                I learned a lot from this project: 
+                Deep knowledge on the fundamentals of Django, 
+                working with official documentation,
+                django signals, test driven development, 
+                python libraries like OS,
+                handling user uploaded images, 
+                basic deployment on heroku, etc.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="project-section-title">Too short; I want to read</h3>
         </section>
 
         <section class="project-section">
@@ -99,12 +126,34 @@
         <section class="project-section">
             <h3 class="project-section-title">More about the app</h3>
             <p class="project-text">
-                This 
+                This app was deployed using Heroku.
+            </p>
+            
+            <p class="project-text">
+                I spent around two weeks working on the basic features of the app,
+                and one additional month testing, adding new features,
+                and styling the application with CSS.
             </p>
 
             <p class="project-text">
+                If the user doesn't upload an image, 
+                a default appropriate image representing an empty image is used.
+                Images must be at most 2MB in size. 
+                Current validation accepts only .jpg, .jpeg, and .png file formats.
             </p>
 
+            <p class="project-text">
+                Passwords are hashed automatically by Django, 
+                so there's no risk in your password being revealed.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h3 class="project-section-title">What I learned</h3>
+            <p class="project-text">
+
+            </p>
+            
             <p class="project-text">
             </p>
 
@@ -115,6 +164,20 @@
             </p>
         </section>
 
+        <section class="project-section">
+            <h3 class="project-section-title">Obstacles and how I overcame them</h3>
+            <p class="project-text">
+            </p>
+            
+            <p class="project-text">
+            </p>
+
+            <p class="project-text">
+            </p>
+
+            <p class="project-text">
+            </p>
+        </section>
 
     </main>
 
