@@ -43,32 +43,44 @@
 
         <section class="project-section">
             <h3 class="project-section-title">Project links</h3>
-            <a class="project-link" target="_blank" href="#">View deployed project site</a>
-            <a class="project-link" target="_blank" href="#">View source code on Github</a>
+            <a class="project-link" target="_blank" href="https://anuncioneon-joselws.herokuapp.com/">View deployed project site</a>
+            <a class="project-link" target="_blank" href="https://github.com/joselws/anuncioneon">View source code on Github</a>
         </section>
 
         <section class="project-section">
             <h3 class="project-section-title">Skills used & Tech stack</h3>
             <ul class="project-list">
-                <li class="project-skills"></li>
-                <li class="project-skills"></li>
-                <li class="project-skills"></li>
-                <li class="project-skills"></li>
-                <li class="project-skills"></li>
-                <li class="project-skills"></li>
-                <li class="project-skills"></li>
-                <li class="project-skills"></li>
+                <li class="project-skills">Web Development</li>
+                <li class="project-skills">Django</li>
+                <li class="project-skills">Python</li>
+                <li class="project-skills">Web Scrapping</li>
+                <li class="project-skills">HTML/CSS</li>
+                <li class="project-skills">Object Oriented Programming</li>
+                <li class="project-skills">Multithreading</li>
+                <li class="project-skills">Multiprocessing</li>
+                <li class="project-skills">Regular Expressions</li>
+                <li class="project-skills">Search and Filtering</li>
+                <li class="project-skills">Responsive Design</li>
+                <li class="project-skills">Heroku</li>
+                <li class="project-skills">Testing</li>
             </ul>
         </section>
 
         <section class="project-section">
             <h3 class="project-section-title">Tl;dr</h3>
-            <p>
-
-            </p>
-            
             <p class="project-text">
+                This is a Django project that scrapes advertisement data from the page
+                anuncioneon.es (site in Spanish) and stores them in the database.
+                Data was scraped from the home page and each advertisement category.
+            </p>
 
+            <p class="project-text">
+                I learned many things I was not familiar with in this project.
+                I learned how to request data with the requests module, 
+                scrape data and parse them with BeautifulSoup, 
+                follow object-oriented design in building webscrapers,
+                use regular expressions to get specific substring data I needed,
+                use multithreading to speed up the data request process,
             </p>
         </section>
 
@@ -80,19 +92,28 @@
             <h3 class="project-section-title">About</h3>
             <p class="project-text">
                 The fist working version of this project (as of this writing)
-                was finished on <strong>Date num<sup>th</sup> 2022.</strong>
+                was finished on <strong>March 18<sup>th</sup> 2022.</strong>
             </p>
 
             <p class="project-text">
-                
+                This is a Django project that gets data from anuncioneon.es website.
+                You can look at the homepage, which has information about all the
+                available categories and subcategories, and also explore available ads
+                on their corresponding sections. Each ad has a title, subtitle, 
+                small description, price, and an optional image.
             </p>
 
             <p class="project-text">
-
+                There is a filter section in which you can search for specific ads that
+                matches your query on title and description. 
+                You may additionally also filter by category.
             </p>
 
             <p class="project-text">
-
+                The heart of this app is on the web scraper program, in which all the 
+                important logic and features of this project are contained:
+                From the requests and HTML parsing, 
+                to multithreading and multiprocessing the data. 
             </p>
 
         </section>
@@ -100,19 +121,20 @@
         <section class="project-section">
             <h3 class="project-section-title">More about the app</h3>
             <p class="project-text">
-                
+                You may visit the site I scraped  
+                <a href="http://www.anuncioneon.es/" target="_blank">here</a>.
             </p>
             
             <p class="project-text">
+                This site is in Spanish, and its ads are from Spain.
+            </p>
 
+            <p class="project-text">
+                I'm no UX designer, but I think we can agree that my site looks better ;)
             </p>
             
             <p class="project-text">
-
-            </p>
-            
-            <p class="project-text">
-
+                This app was deployed using Heroku.
             </p>
             
             <p class="project-text">
@@ -124,15 +146,27 @@
         <section class="project-section">
             <h3 class="project-section-title">Obstacles and how I faced them</h3>
             <p class="project-text">
-
+                For most of the data fetching, parsing, and scraping process,
+                it was pretty straightforward progress and posed no difficulties.
             </p>
             
             <p class="project-text">
-
+                At some point, I had to <strong>extract a specific substring </strong> 
+                located in an "a" HTML tag, in the "href" attribute. 
+                I thought hard how to solve it using normal string operations on Python, 
+                but figured the most direct and easiest way to solve the problem was by using 
+                <strong>Regular Expressions.</strong>
             </p>
             
             <p class="project-text">
-
+                All the data fetching from the 20 different category pages 
+                was taking a lot of time to complete,
+                so I learned how to speed up the process by using 
+                <strong>multithreading.</strong> 
+                I spent significant time learning about this new concept for me,
+                and decided to implement this behavior with <strong>ThreadPoolExecutor()</strong> 
+                in Python's concurrent.futures module.
+                <strong>This cut the time it took to fetch all the data by 3.</strong>
             </p>
             
             <p class="project-text">
@@ -144,15 +178,23 @@
         <section class="project-section">
             <h3 class="project-section-title">What I learned</h3>
             <p class="project-text">
-                
+                I learned a lot about new concepts previously unknown to me,
+                not only limited to Python or Django, 
+                but also about <strong>Software Development</strong> in general.
             </p>
 
             <p class="project-text">
-
+                I learned how to do <strong>web scraping</strong>, 
+                and this is an important skill to have in general, I believe. 
+                My confidence in programming is now higher.
+                I learned how to fetch data using the <strong>Requests</strong> Python module, 
+                and parse its contents using <strong>BeautifulSoup</strong>, 
+                locating all the data I needed for the project.
             </p>
 
             <p class="project-text">
-
+                I learned about multithreading and multiprocessing, their differences,
+                and when to use one over the other.
             </p>
 
             <p class="project-text">
