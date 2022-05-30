@@ -50,12 +50,15 @@
         <section class="project-section">
             <h3 class="project-section-title">Skills used & Tech stack</h3>
             <ul class="project-list">
-                <li class="project-skills"></li>
-                <li class="project-skills"></li>
-                <li class="project-skills"></li>
-                <li class="project-skills"></li>
-                <li class="project-skills"></li>
-                <li class="project-skills"></li>
+                <li class="project-skills">Django</li>
+                <li class="project-skills">Python</li>
+                <li class="project-skills">Django Rest Framework</li>
+                <li class="project-skills">REST API</li>
+                <li class="project-skills">OpenAPI</li>
+                <li class="project-skills">Test-Driven Development</li>
+                <li class="project-skills">Object-Oriented Programming</li>
+                <li class="project-skills">Validators</li>
+                <li class="project-skills">Collaboration</li>
                 <li class="project-skills"></li>
                 <li class="project-skills"></li>
             </ul>
@@ -64,10 +67,15 @@
         <section class="project-section">
             <h3 class="project-section-title">Tl;dr</h3>
             <p>
-
+                This is a Django web application project created as an assisting tool for personal finances.
+                You create and log in into your account, and from there you may create multiple wallets
+                to serve different financial purposes; i.e. a wallet for investing, or for saving.
+                You may delete, create, and edit wallets as you wish.
             </p>
             
             <p class="project-text">
+                I learned a ton of useful back-end skills on this project. Developing REST APIs with
+                DRF (Django Rest Framework), Django validators (field and model level),
 
             </p>
         </section>
@@ -84,15 +92,29 @@
             </p>
 
             <p class="project-text">
-                
+                This is a Django project that places emphasis on managing user wallets.
+                It's a helping tool to keep track of your personal finances by adding,
+                substracting, and moving your money around.
             </p>
 
             <p class="project-text">
-
+                Each wallet has a <strong>percent</strong> and a <strong>cap</strong> property.
+                The <strong>percent</strong> property is how the money will distribute among the wallets when
+                you make a deposit into your account. For example, if you have three wallets with
+                70%, 20%, and 10%, and you make an account deposit of $1000, the wallets will receive
+                $700, $200, and $100 respectively. Of course, you can always choose to add money into
+                a specific wallet independently.
             </p>
 
             <p class="project-text">
+                The <strong>cap</strong> property represents the upper limit of how much money a
+                wallet may hold. For example, you might not want a hypothetic <i>savings</i> account
+                to surpass $60,000 and instead redistribute its part of the money on a deposit among
+                the other wallets.
+            </p>
 
+            <p class="project-text">
+                You may change the <i>percent</i> and <i>cap</i> properties of each wallet anytime you want.
             </p>
 
         </section>
@@ -144,11 +166,17 @@
         <section class="project-section">
             <h3 class="project-section-title">What I learned</h3>
             <p class="project-text">
+                First and foremost, I learned how to develop a working REST API through TDD (test-driven development).
                 
             </p>
 
             <p class="project-text">
-
+                In a general sense, I expanded my knowledge of the Django framework and I now have more of the tools
+                it has to offer at my disposal, primarily Django Rest Framework, 
+                but also other things like validators, and how Django models work internally with 
+                <code>clean()</code> and <code>full_clean()</code> methods.
+                I also learned how to better test atomic transactions using the 
+                <code>TransactionTestCase()</code> class.
             </p>
 
             <p class="project-text">
