@@ -498,7 +498,7 @@ h6 { font-size: 16px; }
     align-items: center;
 }
 
-.project-image-wrapper a {
+.project-image-wrapper a, .project-image-wrapper img {
     max-width: 80%;
     margin: 0 auto;
 }
@@ -522,6 +522,10 @@ h6 { font-size: 16px; }
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.blog-changelog-ul {
+    list-style-type: disc;
 }
 
 
