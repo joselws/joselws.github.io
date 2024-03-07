@@ -68,6 +68,13 @@
         <section class="project-section">
             <h3 class="project-section-title">Tl;dr</h3>
             <p>
+                <strong>Important:</strong> The project was formerly deployed using Heroku.
+                Since this cloud service stopped its free usage, the website is down for the time being.
+                You can still clone the project's repo, install the requirements in a new Python env,
+                and run it with <code>python3 manage.py runserver</code>.
+            </p>
+
+            <p>
                 This is an ecommerce website based on auctions,
                 where you can post, bid, and comment other items.
                 You can open an account by registering.
@@ -79,11 +86,9 @@
             <p class="project-text">
                 I learned a lot from this project: 
                 Deep knowledge on the fundamentals of Django, 
-                working with official documentation,
-                django signals, test driven development, 
-                python libraries like OS,
-                handling user uploaded images, 
-                basic deployment on heroku, etc.
+                working with the official django documentation,
+                django signals, expanded knowledge of available python libraries,
+                handling user uploaded images, basic deployment on heroku, etc.
             </p>
         </section>
 
@@ -122,8 +127,9 @@
             </p>
 
             <p class="project-text">
-                You may browse items by applying filters like the most populars (items with the highest activity),
-                recent (those who were updated least), view by categories (like books or electronics),
+                You may browse items by applying filters like the most populars 
+                (items with the highest activity), recent (those who were updated last), 
+                view by categories (like books or electronics),
                 watchlist, or your active items.
             </p>
         </section>
@@ -136,7 +142,7 @@
             
             <p class="project-text">
                 I spent around two weeks working on the basic features of the app,
-                and one additional month testing, adding new features,
+                and some additional time for testing, adding new features,
                 and styling the application with CSS.
             </p>
 
@@ -155,8 +161,6 @@
             <p class="project-text">
                 There are many features ideas that I may add some time in the future,
                 you can check them out on this project's Github repository README.
-                I would honestly like to eventually turn this project into a fully working,
-                complete commercial application.
             </p>
         </section>
 
@@ -164,19 +168,14 @@
             <h3 class="project-section-title">Obstacles and how I faced them</h3>
             <p class="project-text">
                 As with any project or working on something you're not familiar with,
-                obstacles will naturally appear as you work on features on your project.
-                I did encounter handful of them, but I will mention the most prominent ones.
+                obstacles will naturally occur as you work on complex features.
+                I did encounter a handful of them, but I will mention the most prominent ones.
             </p>
             
             <p class="project-text">
                 <strong>Storing user-uploaded images.</strong>
-                When I started thinking about how I would handle the images in this app,
-                the first thing that popped out of my mind was "wait a second,
-                how do databases store images?" After a bit of research, 
-                I found out that they don't. Dedicated cloud servers like AWS or Azure
-                are required for these kind of tasks. The problem is, to use AWS or Azure,
-                I need a credit card, which I don't have, so I thought about storing user images
-                within the folder directory. After a bit of workarounds and tweaking with 
+                Since this app isn't connected to dedicated cloud servers like AWS or Azure,
+                images are stored locally. After a bit of workarounds and tweaking with 
                 Django project settings, I was able to store user-uploaded files in a dedicated 
                 folder within the project directory.
             </p>
@@ -184,23 +183,9 @@
             <p class="project-text">
                 The next problem I encountered is related to the one mentioned above:
                 <strong>Delete user-uploaded images no longer in use.</strong>
-                One might naturally assume that if you delete the item an image belongs to,
-                the image will also disappear, but it doesn't. This is a problem because,
-                on a scalable app, in the long run a lot of images would end up clustering up
-                in the folder that are not necessary anymore, so I had to figure out a way of
-                deleting an image as soon as its respective item gets deleted as well.
                 That's when I found out about Django signals. I learned about them,
-                and connected a couple of those so the image is deleted along with the item,
+                and used a couple of those so the image is deleted along with the item,
                 or the image is deleted when the item's image is edited and replaced.
-            </p>
-
-            <p class="project-text">
-                What's described above also leads to another problem.
-                What if there is no image to begin with? Deleting something that doesn't
-                exist would cause an error, so I had to find a way of 
-                <strong>Asserting that an image exists.</strong>
-                This lead to studying the Python "os" module and using os.path.exists() method.
-                As its name tells, this method let's you know whether a path exists.
             </p>
 
             <p class="project-text">
@@ -216,76 +201,37 @@
             <p class="project-text">
                 There are plenty of things I learned through this experience.
                 The most prominent is now my overall <strong>growth</strong> as a developer.
-                Although the app is by itself quite simple - nothing too complex - 
-                I had to apply many of the web development practices fundamentals,
-                which led to learning about web development in general and a deeper 
-                knowledge of the Python programming language, the Django Framework,
-                HTML, and CSS. 
+                In general, I developed a deeper knowledge of the Python programming language, 
+                the Django Framework, HTML, and CSS.
             </p>
 
             <p class="project-text">
-                A best practice I enforced myself to follow on this project was 
+                A common best practice I strictly enforced myself to follow for this project was 
                 <strong>TDD (Test Driven Development)</strong>, 
                 which is about working first on writing the tests for a particular feature,
-                then write the code to pass those tests. At first, it felt awkward to do things this way,
-                but I kept doing it because I'm aware it's a software best practice used to produce
-                high quality code and build more robust applications.
-                One thing that greatly helped me is to figure out exactly how do you want 
-                your feature to behave under as many scenarios as you can imagine,
-                and then write it all out. With this, it's easier to write the tests for it, 
-                and consequently, the real code that follows.
-                This was such a smooth process that I got super impressed!
-                I'm sure this is a common practice used under a name I don't yet know. 
+                then write the code to pass those tests. 
                 Bugs were so easy to find and fix, and I knew for sure the application
-                would be so much less prone to bugs. I'm definitely doing TDD in any other
-                opportunity I can.
+                would be more robust and behave the way I wanted to. 
             </p>
             
             <p class="project-text">
                 <strong>Django</strong> has a pretty vast ecosystem, there's almost always a module for
-                everything you need web related. I familiarized myself with many of the
-                Django-way of doing things: Models, urls, project settings, quering databases,
+                everything you need web-related. I deepened my knowledge with many of the
+                framework resources: Models, urls, project settings, ORM,
                 signals, CRUD operations, testing, request and response objects,
                 static file management, user uploaded files, template language (Jinja),
-                Django CLI commands from the project directory like shell, 
-                got familiar with the official documentation, and much more.
-            </p>
-
-            <p class="project-text">
-                As for <strong>Python</strong>, since Django works with Python, 
-                I inevitably learned more about the language itself in general.
-                I feel I improved a lot with Python Object Oriented Programming.
-                I particularly learned a lot about the "os" and "os.path",
-                since they were required for this project. 
-                Using Python, I learned how to remove files, work around directories,
-                and even execute shell commands. I also got a bit familiar
-                with the 'subprocess' module.
-            </p>
-
-            <p class="project-text">
-                For <strong>HTML and CSS</strong>, I did my best to apply good practices.
-                For example, keeping the HTML code clean, give the elements meaningful class names,
-                use HTML semantic elements, and use mobile first approach.
-                It's amazing how I didn't know much how to do complex things on CSS a month ago,
-                things like Flexbox, Grid, or media queries. 
-                I got so familiar with Flexbox, that it has virtually become second nature.
-                I also used Grid to some extent. I now feel confident working with boxes,
-                moving them around, and making the site follow the planned layout.
+                Django CLI, official documentation, and much more.
             </p>
         </section>
 
         <section class="project-section">
             <h3 class="project-section-title">Conclusion</h3>
             <p class="project-text">
-                If you've read everything so far, that's great! I would like to announce something.
                 From all the experience I acquired working on this project, and for all
-                the best practices I enforced myself to use during the process, I can confidently state that 
-                <strong><i>
-                    I feel capable of successfully working on professional projects that involve
-                    Django, Python, HTML/CSS, or any the sort. 
-                    I proved myself I can learn fast to achieve whatever may be required for the project,
-                    while keeping the code as clean, as robust, as readable, and as scalable as posible.
-                </i></strong>
+                the best practices I enforced myself to follow during the process, 
+                I proved myself I can learn and work with new technologies fast to 
+                achieve whatever may be required for the project,
+                while keeping the code as clean, as robust, as readable, and as scalable as posible.
             </p>
         </section>
 
